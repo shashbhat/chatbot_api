@@ -20,4 +20,4 @@ def get_bot_response(msg):
     return str(chatbot.get_response(msg))
  
 if __name__ == "__main__":
-    app.run() 
+    app.run(port=8088) 
