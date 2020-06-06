@@ -6,9 +6,9 @@ app = Flask(__name__)
 CORS(app)
 # app.static_folder = 'static'
 
-# @app.route("/")
-# def home():
-#     return render_template("index.html")
+@app.route("/")
+def home():
+    return {"message":"Hello"}
 
 @app.route('/check')
 def message():
