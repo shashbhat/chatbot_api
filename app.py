@@ -8,7 +8,7 @@ CORS(app)
 
 @app.route("/")
 def home():
-    return {"message":"Hello"}
+    return "Hello"
 
 @app.route('/check')
 def message():
@@ -20,4 +20,4 @@ def get_bot_response(msg):
     return str(chatbot.get_response(msg))
  
 if __name__ == "__main__":
-    app.run(port=8088) 
+    app.run() 
