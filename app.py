@@ -10,6 +10,10 @@ CORS(app)
 # def home():
 #     return render_template("index.html")
 
+@app.route('/check')
+def message():
+    return {"message":"Check you luck"}
+
 @app.route("/chat/<msg>")
 def get_bot_response(msg):
 
